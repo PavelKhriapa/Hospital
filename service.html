@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/lightbox.min.css" rel="stylesheet" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+	<script src="https://kit.fontawesome.com/9eca88f903.js" crossorigin="anonymous"></script>
+	<title>Трезвость</title>
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header_adresses__flexbox">
+				<ul class="menu__box adresses">
+						<li><a class="menu__item" href="#">Лыбедская</a>
+							<img src="img/Arrow_menu.png" alt="" class="triangle">
+							<ul class="submenu">
+								<li>Заводской проезд, 23</li>
+							</ul>
+						</li>
+						<li><a class="menu__item" href="#">Театральная</a>
+							<img src="img/Arrow_menu.png" alt="" class="triangle">
+							<ul class="submenu">
+								<li>Габричевского, 5/10</li>
+							</ul>
+						</li>
+						<li><a class="menu__item" href="#">Лукьяновская</a>
+							<img src="img/Arrow_menu.png" alt="" class="triangle">
+							<ul class="submenu">
+								<li>Каширское шоссе, 58</li>
+							</ul>
+						</li>
+						<li><a class="menu__item" href="#">Хотов</a>
+							<img src="img/Arrow_menu.png" alt="" class="triangle">
+							<ul class="submenu">
+								<li>Санатория Мцыри, 3</li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+			<div class="header_inner">
+				<div class="header__container">
+					<div class="header__container__flexbox">
+						<div class="logo"><a href="index.html"><img src="img/new-logo.png" alt=""><p>Трезвость</p></a></div>
+						<nav class="burger_menu">
+							<input id="menu__toggle" type="checkbox" />
+								<label class="menu__btn" for="menu__toggle">
+								<span></span>
+							</label>
+							<ul class="menu__box">
+								<li><a class="menu__item" href="#">Наши услуги <img src="img/Vector.png" alt=""></a>
+									<div class="dropdown-content">
+										<a href="service.html">Link 1</a>
+										<a href="service.html">Link 2</a>
+										<a href="service.html">Link 3</a>
+									</div>
+								</li>
+								<li><a href="about.html" class="menu__item" href="#">О клинике</a>
+								</li>
+								<li><a href="faq.html" class="menu__item" href="#">Ответы на вопросы</a>
+								</li>
+								<li><a href="contacts.html" class="menu__item" href="#">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="contact_block">
+							<div class="contact_block_left">
+								<a href="" class="contact_block_social_link"><i class="fa-brands fa-telegram"></i></a>
+								<a href="" class="contact_block_social_link"><i class="fa-brands fa-whatsapp"></i></a>
+								<a href="" class="contact_block_social_link"><i class="fa-brands fa-viber"></i></a>
+							</div>
+							<div class="contact_block_right">
+								<a href="tel:8 495 260-97-05" class="contact_block_phone"> 067 260-97-05</a>
+								<div class="contact_block_descript">Киев и Область, 24 часа</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+
+
+			<section class="about_clinic service_page">
+				<div class="about_clinic_inner">
+					<div class="about_clinic_left_block">
+						<div class="container">
+							<h2>Стационарное лечение алкоголизма от 6000грн</h2>
+							<div class="container_row">
+								<div class="container_row_block">
+									<img src="img/Inner Plugin Iframe.svg" alt="">
+									<div class="container_row_block_text">
+										Круглосуточное пребывание <br>пациента в клинике
+									</div>
+								</div>
+								<div class="container_row_block">
+									<img src="img/Inner Plugin Iframe.svg" alt="">
+									<div class="container_row_block_text">
+										Круглосуточное наблюдение <br>врачей и психологов
+									</div>
+								</div>
+								<div class="container_row_block">
+									<img src="img/Inner Plugin Iframe.svg" alt="">
+									<div class="container_row_block_text">
+										4-х разовое <br>питание
+									</div>
+								</div>
+							</div>
+							<button id="popup_button" class="help__button">Получить помощь</button>
+						</div>
+					</div>
+					<div class="about_clinic_rigt_block">
+						<img src="img/doctor-service.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="about_procedure">
+				<div class="about_procedure_inner">
+					<div class="container">
+						<h2>О процедуре</h2>
+						<p>Поступив в клинику на стационарное лечение у пациента сразу же берут анализы, проводят необходимые обследования и совместно с лечащим врачом определяют тактику лечения. В зависимости от выбранного уровня комфорта пациент размещается в 1-2-3 местной или общей палате, где пациенту сразу же ставят капельницу для облегчения состояния. Затем, в течение каждого дня пребывания в клинике, пациентам проводят от 2-х до 4-х капельных процедур, назначенные физиопроцедуры, а также консультации других специалистов по необходимости. В клинике ведут приём и проводят терапию клинические психологи – психотерапевты. Занятия проводятся так же с родственниками больного, так как это в значительной степени помогает предотвратить срыв и улучшает атмосферу внутри семьи. После выписки все пациенты получают необходимые рекомендации для дальнейшего выздоровления и профилактики срыва.</p>
+						<div class="about_procedure_lists_row">
+							<div class="about_procedure_lists_block left">
+								<div class="about_procedure_lists_block_image">
+									<img src="img/hypnosis_eye.png" alt="">
+								</div>
+								<h3>Показания:</h3>
+								<ul>
+									<li>Человек не может остановиться</li>
+									<li>Сильное желание употребить алкоголь</li>
+									<li>Тревожность, бессонница, депрессивное состояние</li>
+									<li>Тошнота, рвота, сильная жажда</li>
+									<li>Головная боль, головокружение</li>
+									<li>Сердцебиение, повышение или понижение давления</li>
+									<li>Тремор — мелкое дрожание рук</li>
+								</ul>
+							</div>
+							<div class="about_procedure_lists_block right">
+								<div class="about_procedure_lists_block_image">
+									<img src="img/lotus-flower.png" alt="">
+								</div>
+								<h3 id="result_title">Результат:</h3>
+								<ul>
+									<li>Улучшение общего состояния</li>
+									<li>Нормализация сна</li>
+									<li>Пройдёт тремор</li>
+									<li>Пропадёт желание «употребить» алкоголь</li>
+									<li>Нормализация настроения</li>
+								</ul>
+							</div>
+						</div>
+						<img class="dot_border" src="img/dot-border.png" alt="">
+						<h2 id="treatment_dektop">Этапы лечения</h2>
+						<p class="about_procedure_small_desc">При прохождении комплексного лечения в клинике Премиум Практик, программа пациента ежедневно содержит и мероприятия направленные на медицинское восстановление, и диагностические, и обучающие мероприятия, а также тренинги навыков. Но условно курс лечения можно разделить на следующие этапы:</p>
+						<div class="slider_row">
+							<div class="slider_links">
+								<ul>
+									<li><a  data-slider="1">01. Предварительная коммуникация<br><br></a></li>
+									<li><a  data-slider="2">02. Сбор информации и первичная консультация<br><br></a></li>
+									<li><a  data-slider="3">03. Первичный консилиум<br><br></a></li>
+									<li><a  data-slider="4">04. Погружение в программу лечения<br><br></a></li>
+									<li><a  data-slider="5">05. Научный консилиум<br><br></a></li>
+									<li><a  data-slider="6">06. Психо-образовательная работа<br><br></a></li>
+									<li><a  data-slider="7">07. Коррекция навыков и копинг-стратегий<br><br></a></li>
+									<li><a  data-slider="8">08. Предвыписной этап<br><br></a></li>
+									<li><a  data-slider="9">09. Амбулаторная программа<br><br></a></li>
+									<li><a  data-slider="10">10. Постреабилитационная поддержка</a></li>
+								</ul>
+							</div>
+							<div class="slider" id="treatment_mob">
+								<div class="swiper">
+								  <div class="swiper-wrapper">
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>01</h2>
+								    		<h3>Предварительная коммуникация</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>02</h2>
+								    		<h3>Сбор информации и первичная консультация</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>03</h2>
+								    		<h3>Первичный консилиум</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>04</h2>
+								    		<h3>Погружение в программу лечения</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>05</h2>
+								    		<h3>Научный консилиум</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>06</h2>
+								    		<h3>Психо-образовательная работа</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>07</h2>
+								    		<h3>Коррекция навыков и копинг-стратегий</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>08</h2>
+								    		<h3>Предвыписной этап</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>09</h2>
+								    		<h3>Амбулаторная программа</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								    <div class="swiper-slide">
+								    	<div class="slide_content">
+								    		<h2>10</h2>
+								    		<h3>Постреабилитационная поддержка</h3>
+								    		<p>Бесплатный звонок в клинику с получением ответов на интересующие вопросы от врача и психолога. Обсуждаются особенности начала лечения. Может быть проведена видеоэкскурсия. При необходимости, возможен выезд специалистов по мотивационной работе, которые помогут пациенту принять решение о госпитализации.</p>
+								    	</div>
+								    </div>
+								  </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="service_packets service_page">
+				<div class="service_packets__inner">
+					<div class="container">
+						<h2>Пакеты услуг:</h2>
+						<div class="service_packets__flexbox top">
+							<a href="#" class="service_packets__flexitem">
+								<h3>Эконом</h3>
+								<p>7000/сутки</p>
+								<div class="service_packets__flexitem_desc">
+									<div class="service_packets__flexitem_text left">
+										<p>общая палата на 4-х человек,</p>
+										<p>2 капельницы утром и вечером + таблетки (антиоксиданты,<br> витамины, препараты для сна, нормализация пульса и давления)</p>
+										<p>ЭКГ</p>
+									</div>
+									<div class="service_packets__flexitem_text right">
+										<p>глюкометрия,</p>
+										<p>осмотр-консультация психиатра-нарколога,</p>
+										<p>назначение поддерживающей и антирецидивной терапии.</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="service_packets__flexitem">
+								<h3>СТАНДАРТ</h3>
+								<p>8000/сутки</p>
+								<div class="service_packets__flexitem_desc">
+									<div class="service_packets__flexitem_text left">
+										<p>трехместная палата,</p>
+										<p>2 капельницы, утром и вечером + таблетки (дорогостоящие <br>антиоксиданты)</p>
+									</div>
+									<div class="service_packets__flexitem_text right">
+										<p>расширенный спектр витаминных препаратов,</p>
+										<p>эффективные схемы препаратов для сна.</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="service_packets__flexitem">
+								<h3>СТАНДАРТ+</h3>
+								<p>10 000/сутки</p>
+								<div class="service_packets__flexitem_desc">
+									<div class="service_packets__flexitem_text left">
+										<p>двухместная палата, с отдельным санузлом и телевизором.</p>
+										<p>препараты предыдущего комплекса</p>
+									</div>
+									<div class="service_packets__flexitem_text right">
+										<p>препараты для восстановления печени</p>
+										<p>анализы в день поступления и в день выписки.</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="service_packets__flexitem">
+								<h3>КОМФОРТ</h3>
+								<p>15 000/сутки</p>
+								<div class="service_packets__flexitem_desc">
+									<div class="service_packets__flexitem_text left">
+										<p>одноместная палата с санузлом, ТВ и WI-Fi,</p>
+										<p>доставка еды в палату,</p>
+										<p>капельницы с дорогостоящими антиоксидантами,</p>
+									</div>
+									<div class="service_packets__flexitem_text right">
+										<p>витаминотерапия, необходимые <br>анализы мочи и крови,</p>
+										<p>усиленная гепатопротекция</p>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="service_packets__flexitem">
+								<h3>ВИП - ПАЛАТА</h3>
+								<p>25 000/сутки</p>
+								<div class="service_packets__flexitem_desc">
+									<div class="service_packets__flexitem_text left">
+										<p>одноместная просторная палата с санузлом и отдельным <br> выходом, холодильником, микроволновой печью, чайником,<br> кондиционером, телевизором, wi-fi, телефоном, рабочим местом<br> с ноутбуком.</p>
+										<p>пациента ежедневно консультирует психолог клиники.</p>
+									</div>
+									<div class="service_packets__flexitem_text right">
+										<p>глав-врач клиники лично курирует пациента, подбирает <br> необходимую терапию с дорогостоящими препаратами и <br> необходимыми методами обследования.</p>
+										<p>питание подбирается индивидуально согласовывается с <br> пациентом, доставка осуществляется в палату.</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="service_packets__flexbox bottom">
+							<a class="service_packets__flexitem" href="#">
+								<h3>Интервенция несогласных</h3>
+								<p>15 000 грн</p>
+							</a>
+							<a class="service_packets__flexitem" href="#">
+								<h3>Первичная консультация психолога</h3>
+								<p>бесплатно</p>
+							</a>
+							<a class="service_packets__flexitem" href="#">
+								<h3>Платные сессии с психологом</h3>
+								<p>5000 грн/сеанс</p>
+							</a>
+							<a class="service_packets__flexitem" href="#">
+								<h3>Доставка с врачебным сопровождением</h3>
+								<p>3000 грн</p>
+							</a>
+							<a class="service_packets__flexitem" href="#">
+								<h3>Биохимический анализ крови</h3>
+								<p>5000 грн</p>
+							</a>
+							<a class="service_packets__flexitem" href="#">
+								<h3>Больничный лист</h3>
+								<p>1500 грн/сутки</p>
+							</a>
+						</div>
+						<p class="small_descript">В цену каждого пакета включено питание и проживание.</p>
+						<a class="appointment second_appointment">
+							<p>Заказать звонок</p>
+							<div class="arrow"></div>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact_form__bottom service_page">
+				<div class="contact_form_inner">
+					<div class="container">
+						<h2>Оставьте заявку и получите <span>скидку</span></h2>
+						<p>Если вы оставете заявку сегодня – <span>получите скидку 10% на любую услугу</span>
+						Наш дежурный свяжется с вами уже в течение 10 минут.</p>
+						<form class="form contact_form__container" method="POST">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Мострезвость">
+							<input type="hidden" name="admin_email" value="saprikina.doc@gmail.com">
+							<input type="hidden" name="form_subject" value="Заказ звонка">
+							<!-- END Hidden Required Fields -->
+							<input type="text" placeholder="Ваше имя" name="Имя" required>
+							<input class="form_phone" type="tel" placeholder="Ваш телефон" name="Телефон" required>
+							<button type="submit" class="help__button">Заказать звонок</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="our_specialists">
+				<div class="our_specialist__inner about_page service_page">
+					<div class="container">
+						<h2>Наши врачи</h2>
+						<div class="our_specialist__flexbox">
+							<div class="our_specialist__flexitem">
+								<img src="img/zaretskiy.png" alt="">
+								<h3>Зарецкий Алексей Ильич</h3>
+								<p class="status">Психиатр-нарколог. Полковник м/с в отставке, доктор медицинских наук, профессор.</p>
+								<p class="specialist__description">
+									Разработчик комплексного биоинформационного метода в лечении зависимостей от химических веществ изменяющих сознание. Убеждённый сторонник комплексного подхода в лечении зависимостей как единственно верного.</p>
+							</div>
+							<div class="our_specialist__flexitem">
+								<img src="img/pavlov.png" alt="">
+								<h3>Павлов Олег Николаевич</h3>
+								<p class="status">Психиатр-нарколог. Кандидат медицинских наук, майор м/с.</p>
+								<p class="specialist__description">
+									Специализируется на психотерапии созависимости. В клинике \"Мострезвость\" возглавляет отделение реабилитации и групповой терапии. Компетентный и грамотный специалист, любящий свою работу.
+								</p>
+							</div>
+							<div class="our_specialist__flexitem">
+								<img src="img/minin.png" alt="">
+								<h3>Минин Борис Сергеевич</h3>
+								<p class="status">Психиатр-нарколог. Доктор медицинских наук, врач высшей категории.</p>
+								<p class="specialist__description">
+									В 2010 году присуждено звание профессор кафедры наркологии РМАПО. Противник принудительных мер в лечении. Способен найти подход к пациенту даже в самых сложных случаях наркозависимости.
+								</p>
+							</div>
+							<div class="our_specialist__flexitem">
+								<img src="img/konovalov.png" alt="">
+								<h3>Коновалов Илья Юрьевич</h3>
+								<p class="status">Нарколог, психиатр, психотерапевт.</p>
+								<p class="specialist__description">
+									Эксперт по фармакотерапии психических расстройств. Занимается подбором терапии при резистентных формах психических расстройств. Имеет международный сертификат GSP.
+								</p>
+							</div>
+						</div>
+						<img class="dot_border" src="img/dot-border.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews service_page">
+				<div class="reviews__inner">
+					<div class="container">
+						<h2>Отзывы наших клиентов</h2>
+						<div class="reviews__flexbox">
+							<div class="reviews__flexitem">
+								<img src="img/brown_bloquote.png" alt="">
+								<p>Доброго времени суток. Обратился прокапать и закодировать брата. До этого сам как-то лечился в ВМА, положительные эмоции. Какие и должны быть военные врачи. Все по делу.</p>
+								<p class="reviewer_name">Кузнецов Михаил</p>
+							</div>
+							<div class="reviews__flexitem">
+								<img src="img/grey_bloquote.png" alt="">
+								<p>К нам постоянно ездил врач Денис, недавно узнали, что распределился на кольский полуостров. Посоветовал нам своего друга из клиники Олега. Вот что значит преемственность.</p>
+								<p class="reviewer_name">Любовь М.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact_form__bottom">
+				<div class="contact_form_inner">
+					<div class="container">
+						<h2>Оставьте заявку и получите <span>скидку</span></h2>
+						<p>Если вы оставете заявку сегодня – <span>получите скидку 10% на любую услугу</span>
+						Наш дежурный свяжется с вами уже в течение 10 минут.</p>
+						<form class="form contact_form__container" method="POST">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Мострезвость">
+							<input type="hidden" name="admin_email" value="saprikina.doc@gmail.com">
+							<input type="hidden" name="form_subject" value="Заказ звонка">
+							<!-- END Hidden Required Fields -->
+							<input type="text" placeholder="Ваше имя" name="Имя" required>
+							<input class="form_phone" type="tel" placeholder="Ваш телефон" name="Телефон" required>
+							<button type="submit" class="help__button">Заказать звонок</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section class="map">
+				<div class="map__inner">
+					<div class="script__block">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A96c88d82ff41c2763968ff10d6df5f81ba73ab84f5aa1a5c2f1b9e1434aae259&amp;width=1920&amp;height=817&amp;lang=ru_RU&amp;scroll=false">
+						</script>
+					</div>
+				</div>
+				<div class="linear__back"></div>
+				<div class="container">
+					<div class="map_info">
+						<a class="map_info__tel" href="tel:+38 (067) 260-97-05">067 260-97-05</a>
+						<a class="map_info__mail" href="mailto:info@mtrezvost.ua">info@mtrezvost.ua</a>
+						<p>г. Киев, Заводской проезд, д. 23</p>
+						<p>г. Киев, ул. Габричевского, д. 5/10 </p>
+						<p>г. Киев, Каширское шоссе, д. 58 корп. 3 </p>
+						<p>Киевская область, Солнечногорский р-н, п. Санатория Мцыри, д. 3</p>
+						<div class="contact_block_left">
+							<a href="" class="contact_block_social_link"><i class="fa-brands fa-telegram"></i>Телеграм</a>
+							<a href="" class="contact_block_social_link"><i class="fa-brands fa-whatsapp"></i>Ватсапп</a>
+							<a href="" class="contact_block_social_link"><i class="fa-brands fa-viber"></i>Вайбер</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+
+
+		<footer class="footer">
+			<div class="footer__inner">
+				<div class="container">
+					<div class="footer__flexbox">
+						<a href="#">Политика конфиденциальности</a>
+						<p>2021</p>
+						<p>© Мтрезвость, все права защищены</p>
+				</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+		<section class="popup">
+			<div class="popup__inner">
+				<div class="container">
+					<div class="popup_form">
+						<h2>Оставьте заявку</h2>
+						<p>Мы вам перезвоним</p>
+						<form class="popup_form__container" method="POST">
+							<!-- Hidden Required Fields -->
+							<input type="hidden" name="project_name" value="Мострезвость">
+							<input type="hidden" name="admin_email" value="saprikina.doc@gmail.com">
+							<input type="hidden" name="form_subject" value="Заказ звонка">
+							<!-- END Hidden Required Fields -->
+							<input type="text" placeholder="Ваше имя" name="Имя" required>
+							<input class="form_phone" type="tel" placeholder="Ваш телефон" name="Телефон" required>
+							<button class="help__button"></button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="popup_close">&#215;</div>
+		</section>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/jquery_maskedinput.js"></script>
+	<script src="js/sendMail.js"></script>
+	<script>
+		$.fn.setCursorPosition = function(pos) {
+		  if ($(this).get(0).setSelectionRange) {
+		    $(this).get(0).setSelectionRange(pos, pos);
+		  } else if ($(this).get(0).createTextRange) {
+		    var range = $(this).get(0).createTextRange();
+		    range.collapse(true);
+		    range.moveEnd('character', pos);
+		    range.moveStart('character', pos);
+		    range.select();
+		  }
+		};
+		$('.form_phone').click(function(){
+		  var inputs = $(this).val();
+		  var number = 0;
+		  for (var i = 0; i < inputs.length; i++) {
+		    if(inputs[i] == '_') {
+		    }
+		    else {
+		      number++;
+		    }
+		  }
+		  $(this).setCursorPosition(number);
+		}).mask("+79999999999");
+	</script>
+	<script>
+		const button = document.querySelector('#popup_button');
+		const popup = document.querySelector('.popup');
+		const popupClose = document.querySelector('.popup_close');
+
+		button.addEventListener('click', () => {
+			popup.style.display = "block";
+			var buttonText = document.querySelector('.popup_form__container .help__button');
+			buttonText.innerHTML = "Получить помощь"
+		});
+		popupClose.addEventListener('click', () => {
+			popup.style.display = "none";
+		});
+	</script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+		  direction: 'horizontal',
+		  loop: false,
+		  grabCursor: true,
+		});
+		$('.slider_links ul li a').on('click', function() {
+      let sliderNum = $(this).attr('data-slider');
+      swiper.slideTo(sliderNum - 1);
+      swiper.update();
+    });
+	</script>
+	<script>
+			const appointment2 = document.querySelector('.second_appointment');
+			appointment2.addEventListener('click', () => {
+			popup.style.display = "block";
+			var buttonText = document.querySelector('.popup_form__container .help__button');
+			buttonText.innerHTML = "Заказать звонок"
+		});
+	</script>
+	<script>
+		if($(document).width() < 575){
+			$(".slider_links ul li a").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#treatment_mob").offset().top  // класс объекта к которому приезжаем
+			    }, 500); // Скорость прокрутки
+			});
+		}else{
+			$(".slider_links ul li a").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $("#treatment_dektop").offset().top  // класс объекта к которому приезжаем
+			    }, 500); // Скорость прокрутки
+			});
+		}
+	</script>
+</body>
+</html>
